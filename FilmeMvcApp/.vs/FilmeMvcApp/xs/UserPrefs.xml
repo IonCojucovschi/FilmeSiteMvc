@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilmeLibraryService/Services/FilmeServices.cs">
+    <Files>
+      <File FileName="FilmeLibraryService/MyClass.cs" Line="1" Column="1" />
+      <File FileName="FilmeLibraryService/Models/Film.cs" Line="10" Column="31" />
+      <File FileName="FilmeLibraryService/Models/Entity.cs" Line="6" Column="35" />
+      <File FileName="FilmeLibraryService/Repository/FilmsRepository.cs" Line="64" Column="49" />
+      <File FileName="FilmeLibraryService/Services/FilmeServices.cs" Line="7" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FilmeLibraryService FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>
