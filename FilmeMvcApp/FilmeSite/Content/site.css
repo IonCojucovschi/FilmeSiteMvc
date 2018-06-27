@@ -1,0 +1,82 @@
+﻿body {
+    margin:0;
+}
+
+#main {
+background-color:#eee;
+}
+
+#footer {
+width:100%;
+background-color:#222;
+color:#eee;
+padding:10px 8px;
+margin:0;
+position:fixed;
+bottom:0;
+}
+
+#sidebar {
+    background: #2a2c36;
+    color: #eee;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+    left: 0;
+    transition: left ease 0.25s;
+}
+
+#sidebar.hide_sidebar {
+    left:-250px;
+    transition:left ease .25s;
+    }
+
+
+#all_content {
+    margin-left: 250px;
+    transition:margin-left ease 0.25s;
+}
+
+
+
+#all_content.hide_sidebar {
+    margin-left: 0px;
+    transition: margin-left ease .25s;
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+
+
+.film {
+    border: 1px solid #089301 ;
+    height:300px;
+    width: 200px;
+    display: block;
+    float: left;
+    margin: 10px 10px 10px 10px;
+}
+#detail {
+    background: #089301;
+    border: 1px solid white;
+    margin-left:120px;
+    color:#fff;
+    height:30px;
+    width:80px;
+}
+#film_name {
+    background: #2a2c36;
+    width: 200px;
+    height: 30px;
+    margin-top: 240px;
+    margin-left: 0px;
+    bottom: 0;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+}

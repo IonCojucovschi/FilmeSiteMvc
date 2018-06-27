@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link  rel="stylesheet" type="text/css"  href="~/Content/site.css" />
+
+          <title>@ViewBag.Title</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div id="sidebar">
+            @Html.Action("CategoryView", "Home")
+        </div>
+        <div id="all_content">
+            
+            <div id="main">
+                <div>
+                    <button id="sidebarToggle">Menu</button>
+                </div>
+                @RenderBody()
+
+            </div>
+            <div id="footer">
+                &copy; 2018 MIRAMAX STUDIO
+            </div>
+        </div>
+        <script type="text/javascript" src="~/Scripts/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="~/Scripts/site.js"></script>
+
+    </body>
+</html>

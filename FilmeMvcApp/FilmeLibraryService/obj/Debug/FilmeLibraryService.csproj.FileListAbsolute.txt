@@ -1,0 +1,6 @@
+/Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/bin/Debug/FilmeLibraryService.dll
+/Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/bin/Debug/FilmeLibraryService.pdb
+/Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.csprojResolveAssemblyReference.cache
+/Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.csproj.CoreCompileInputs.cache
+/Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.dll
+/Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.pdb

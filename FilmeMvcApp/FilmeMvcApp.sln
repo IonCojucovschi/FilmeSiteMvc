@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmeLibraryService", "FilmeLibraryService\FilmeLibraryService.csproj", "{BDE40493-385D-4FCF-8822-29B27ADA5EED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmeSite", "FilmeSite\FilmeSite.csproj", "{DBFE1A45-1993-4C16-92D5-56D0F484D58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmeSite.Tests", "FilmeSite.Tests\FilmeSite.Tests.csproj", "{819CDE5A-F669-4FEF-BCBC-7F0A45C16044}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +17,13 @@ Global
 		{BDE40493-385D-4FCF-8822-29B27ADA5EED}.Debug|x86.Build.0 = Debug|Any CPU
 		{BDE40493-385D-4FCF-8822-29B27ADA5EED}.Release|x86.ActiveCfg = Release|Any CPU
 		{BDE40493-385D-4FCF-8822-29B27ADA5EED}.Release|x86.Build.0 = Release|Any CPU
+		{DBFE1A45-1993-4C16-92D5-56D0F484D58F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DBFE1A45-1993-4C16-92D5-56D0F484D58F}.Debug|x86.Build.0 = Debug|Any CPU
+		{DBFE1A45-1993-4C16-92D5-56D0F484D58F}.Release|x86.ActiveCfg = Release|Any CPU
+		{DBFE1A45-1993-4C16-92D5-56D0F484D58F}.Release|x86.Build.0 = Release|Any CPU
+		{819CDE5A-F669-4FEF-BCBC-7F0A45C16044}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{819CDE5A-F669-4FEF-BCBC-7F0A45C16044}.Debug|x86.Build.0 = Debug|Any CPU
+		{819CDE5A-F669-4FEF-BCBC-7F0A45C16044}.Release|x86.ActiveCfg = Release|Any CPU
+		{819CDE5A-F669-4FEF-BCBC-7F0A45C16044}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

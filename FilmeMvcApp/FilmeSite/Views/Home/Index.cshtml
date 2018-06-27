@@ -1,0 +1,23 @@
+﻿@using System.Collections.Generic
+@using FilmeLibraryService.Models;
+@model List<Film>
+
+@foreach (var item in Model)
+{
+
+    <div class="film" style="background-image:url('@item.Image')">
+        <input id="detail" value="Detail" type="submit"/>
+        <div id="film_name">
+            @item.Name
+        </div> 
+    </div >
+ }
+    
+
+
+
+
+
+
+
+
