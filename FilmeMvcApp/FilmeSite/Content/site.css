@@ -3,17 +3,19 @@
 }
 
 #main {
-background-color:#eee;
+    height:100%;
+    background-color: #eee;
+    margin-bottom:50px;
 }
 
 #footer {
-width:100%;
-background-color:#222;
-color:#eee;
-padding:10px 8px;
-margin:0;
-position:fixed;
-bottom:0;
+    width:100%;
+    background-color:#222;
+    color:#eee;
+    padding:10px 8px;
+    margin:0;
+    position:fixed;
+    bottom:0;
 }
 
 #sidebar {
@@ -46,12 +48,33 @@ bottom:0;
 }
 
 
+#sidebarToggle {
+    height:40px;
+    width:40px;
+    text-align:center;
+    color:white;
+    background:green;
+    font-size:25px;
+
+}
+.main_menu {
+    padding: 8px;
+    border: 1px solid #fff;
+    background: #089301;
+    color: #000;
+}
+.main_menu a {
+    color:#fff;
+}
+.main_menu:hover {
+    background: #000;
+    color: #fff;
+}
+
 
 li {
     list-style-type: none;
 }
-
-
 
 .film {
     border: 1px solid #089301 ;
@@ -62,21 +85,36 @@ li {
     margin: 10px 10px 10px 10px;
 }
 #detail {
+    padding:4px;
     background: #089301;
     border: 1px solid white;
-    margin-left:120px;
+    margin-left:147px;
     color:#fff;
     height:30px;
     width:80px;
 }
 #film_name {
     background: #2a2c36;
-    width: 200px;
+    width: 198px;
     height: 30px;
-    margin-top: 240px;
+    margin-top: 245px;
     margin-left: 0px;
     bottom: 0;
     align-items: center;
     line-height: 30px;
     text-align: center;
+    color:#fff;
 }
+
+/*Addd film efeects delete edit*/
+.render_content {
+border:1px solid white;
+margin-left:100px;
+
+
+}
+
+
+
+
+

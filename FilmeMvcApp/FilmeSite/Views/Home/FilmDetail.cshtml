@@ -1,0 +1,17 @@
+﻿@using FilmeLibraryService.Models;
+@model Film
+
+<div class="film" style="background-image:url('@Model.Image')">
+    <div id="film_name">
+        @Model.Name
+    </div>
+</div>
+
+<div>
+    <h2>@Model.Name</h2><br />
+    @for (int i = 0; i < 10; i++)
+    {
+        @Model.Description;
+    }
+</div>
+

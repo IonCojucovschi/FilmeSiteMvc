@@ -1,0 +1,38 @@
+﻿@using FilmeLibraryService.Models;
+@model Film
+<div>Adaoga un Nou Film</div>
+<div class="render_content">
+
+    @using (Html.BeginForm())
+    {
+    @Html.LabelFor(model => model.Name, "NUmele Filmului")
+    <br />
+    @Html.EditorFor(model => model.Name)
+    <br />
+    <br />
+    @Html.LabelFor(model => model.Image, "URL Imagine")
+    <br />
+    @Html.EditorFor(model => model.Image)
+
+    <br />
+    <br />
+    @Html.LabelFor(model => model.Description, "Film Descripption")
+    <br />
+    @Html.EditorFor(model => model.Description)
+    <br />
+    <br />
+    @Html.LabelFor(model => model.Description, "Film Descripption")
+    <br />
+    @Html.EditorFor(model => model.Description)
+    <br />
+    <input  type="submit" value="Adaooga"/>
+
+    }
+
+
+</div>
+
+
+
+
+

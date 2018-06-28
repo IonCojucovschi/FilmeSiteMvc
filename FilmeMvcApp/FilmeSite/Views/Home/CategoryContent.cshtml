@@ -1,0 +1,16 @@
+﻿@using System.Collections.Generic;
+@using FilmeLibraryService.Models;
+@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<Film>
+
+    @Html.PagedListPager(Model, page => Url.Action("CategoryContent", new { categ = ViewBag.Categ, page }))
+
+
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_FilmView",item)
+    }
+
+
+

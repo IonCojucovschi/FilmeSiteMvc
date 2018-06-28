@@ -1,8 +1,9 @@
 ﻿@using FilmeLibraryService.Models;
 @model Film
 
-<div>
-    <img src="@Model.Image" height="150" width="70"/>
-
-
+<div class="film" style="background-image:url('@Model.Image')">
+    <a id="detail" href="/Home/FilmDetail?id=@Model.Id">Detail</a>
+    <div id="film_name">
+        @Model.Name
+    </div>
 </div>

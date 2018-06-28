@@ -1,18 +1,17 @@
-﻿@using System.Collections.Generic
+﻿@using System.Collections.Generic;
 @using FilmeLibraryService.Models;
-@model List<Film>
+@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<Film>
 
-@foreach (var item in Model)
-{
+    @Html.PagedListPager(Model,page=>Url.Action("Index", new { page}))
 
-    <div class="film" style="background-image:url('@item.Image')">
-        <input id="detail" value="Detail" type="submit"/>
-        <div id="film_name">
-            @item.Name
-        </div> 
-    </div >
- }
-    
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_FilmView",item);
+
+    }
+
 
 
 

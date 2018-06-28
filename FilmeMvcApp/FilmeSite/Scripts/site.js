@@ -1,7 +1,5 @@
 ﻿(function (){
-
-
-
+    
 var $sidebarAndAllContent=$("#sidebar,#all_content");
 
 
@@ -11,17 +9,17 @@ $("#sidebarToggle").on("click", function(){
 
     if($sidebarAndAllContent.hasClass("hide_sidebar"))
     {
-       $(this).text("Show Menu");
+       $(this).text(">");
     }else
     {
-       $(this).text("Hide Menu");
+       $(this).text("<");
 
     }
-
-
 });
 
+//var $paginationContent=$("disabled, PagedList-ellipses");
 
+//$paginationContent.toggleClass("pagination");
 
 
 

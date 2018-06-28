@@ -35,6 +35,23 @@ namespace FilmeLibraryService.Services
             return filmsRepository.GetAllCategory();
         }
 
+
+        /// <summary>
+        /// Wirck with contewnt of repository
+        /// </summary>
+        /// <param name="film">Film.</param>
+        /// 
+
+        public static void DeleteFilm(Film film)
+        {
+            filmsRepository.DeleteFilm(film);
+        }
+        public static void AddFilm(Film film)
+        {
+            filmsRepository.AddFilm(film);
+        }
+
+
         public static void UpdateFilm(Film film)
         {
            filmsRepository.UpdateFilm(film);

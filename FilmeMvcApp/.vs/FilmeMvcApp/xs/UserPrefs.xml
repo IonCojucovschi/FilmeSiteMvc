@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{DBFE1A45-1993-4C16-92D5-56D0F484D58F}|">
-  <MonoDevelop.Ide.ItemProperties.FilmeSite.Tests FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FilmeSite/Scripts/script.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilmeSite/Views/Film/AddFilm.cshtml">
     <Files>
-      <File FileName="FilmeSite/Views/Shared/_Layout.cshtml" Line="19" Column="30" />
-      <File FileName="FilmeSite/Controllers/HomeController.cs" Line="16" Column="46" />
+      <File FileName="FilmeSite/Controllers/HomeController.cs" Line="48" Column="52" />
       <File FileName="FilmeLibraryService/Services/FilmeServices.cs" Line="2" Column="34" />
-      <File FileName="FilmeSite/Views/Shared/_CategoryView.cshtml" Line="1" Column="1" />
-      <File FileName="FilmeSite/Views/Home/Index.cshtml" Line="18" Column="5" />
-      <File FileName="FilmeSite/Views/Shared/_FilmView.cshtml" Line="6" Column="1" />
-      <File FileName="FilmeSite/Content/site.css" Line="64" Column="2" />
-      <File FileName="FilmeSite/packages.config" Line="1" Column="1" />
-      <File FileName="FilmeSite/Web.config" Line="1" Column="1" />
-      <File FileName="FilmeSite/Scripts/script.js" Line="1" Column="8" />
+      <File FileName="FilmeSite/Views/Shared/_FilmView.cshtml" Line="5" Column="67" />
+      <File FileName="FilmeSite/Content/site.css" Line="77" Column="1" />
+      <File FileName="FilmeSite/Scripts/site.js" Line="6" Column="18" />
+      <File FileName="FilmeSite/Views/Shared/_Layout.cshtml" Line="20" Column="47" />
+      <File FileName="FilmeSite/Views/Home/CategoryContent.cshtml" Line="17" Column="5" />
+      <File FileName="FilmeSite/Views/Home/FilmDetail.cshtml" Line="14" Column="28" />
+      <File FileName="FilmeSite/Views/Home/Index.cshtml" Line="8" Column="1" />
+      <File FileName="FilmeLibraryService/Repository/FilmsRepository.cs" Line="32" Column="1" />
+      <File FileName="FilmeLibraryService/Models/Film.cs" Line="8" Column="34" />
+      <File FileName="FilmeSite/Controllers/FilmController.cs" Line="18" Column="21" />
+      <File FileName="FilmeSite/Views/Film/AddFilm.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
