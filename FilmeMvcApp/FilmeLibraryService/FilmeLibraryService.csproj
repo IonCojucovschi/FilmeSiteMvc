@@ -35,6 +35,7 @@
     <Compile Include="Models\Entity.cs" />
     <Compile Include="Repository\FilmsRepository.cs" />
     <Compile Include="Services\FilmeServices.cs" />
+    <Compile Include="Repository\CustomersContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\">

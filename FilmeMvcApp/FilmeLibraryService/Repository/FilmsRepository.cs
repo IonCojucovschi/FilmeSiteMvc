@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using FilmeLibraryService.Models;
 
@@ -56,12 +57,86 @@ namespace FilmeLibraryService.Repository
 
         public List<Film> Filme = new List<Film>();
         public List<Custommer> Custommers = new List<Custommer>();
-
+       // public CustomersContext custCont;
 
         public FilmsRepository()
         {
             IiniTializeRepo();
         }
+
+
+
+        ///Work with custommers
+        //public int AddItem(Custommer cust)
+        //{
+        //    int ItemIndex;
+        //    using (CustomersContext context = new CustomersContext())
+        //    {
+        //        context.CustomerItems.Add(cust);
+        //        context.SaveChanges();
+        //        ItemIndex = context.CustomerItems.ToList().IndexOf(cust);
+        //    }
+        //    return ItemIndex;
+        //}
+        //public List<Custommer> GetAllCustomers()
+        //{
+        //    using (CustomersContext context = new CustomersContext())
+        //    {
+        //        return context.CustomerItems.ToList<Custommer>();
+        //    }
+        //}
+
+        //public int UpdateCustomer(int Index, Custommer custommer)
+        //{
+        //    using (CustomersContext context = new CustomersContext())
+        //    {
+        //        var updateItem = context.CustomerItems.Where(item => item.Id == Index).FirstOrDefault<Custommer>();
+        //        updateItem.atributo1 = custommer.atributo1;
+        //        updateItem.cap = custommer.cap;
+        //        updateItem.citta = custommer.citta;
+        //        updateItem.cognome = custommer.cognome;
+        //        updateItem.dipartimento = custommer.dipartimento;
+        //        updateItem.fax = custommer.fax;
+        //        updateItem.indirizzo = custommer.indirizzo;
+        //        updateItem.interno = custommer.interno;
+        //        updateItem.mail = custommer.mail;
+        //        updateItem.mobile = custommer.mobile;
+        //        updateItem.mobilepublico = custommer.mobilepublico;
+        //        updateItem.nome = custommer.nome;
+        //        updateItem.posizione = custommer.posizione;
+        //        updateItem.segretaria = custommer.segretaria;
+        //        updateItem.societa = custommer.societa;
+        //        updateItem.solution = custommer.solution;
+        //        updateItem.stanza = custommer.stanza;
+        //        updateItem.telefono = custommer.telefono;
+        //        context.SaveChanges();
+        //        return Index;
+
+        //    }
+
+
+
+        //}
+
+        //public bool DeleteItem(int Index)
+        //{
+        //    using (CustomersContext context = new CustomersContext())
+        //    {
+        //        var itemToremove = context.CustomerItems.Where(item => item.Id == Index).FirstOrDefault();
+        //        context.CustomerItems.Remove(itemToremove);
+        //        context.SaveChanges();
+        //        return true;
+        //    }
+
+        //}
+
+
+
+        ///customers work end  
+
+
+
+
 
 
 
@@ -158,33 +233,59 @@ namespace FilmeLibraryService.Repository
 
                 });
 
-                             
+                //AddItem(new Custommer()
+                //{
+                //    nome = nome[r.Next(nome.Length)],
+                //    cognome = cognome[r.Next(cognome.Length)] + i,
+                //    citta = citta[r.Next(citta.Length)],
+                //    posizione = pozisione[r.Next(pozisione.Length)],
+                //    mail = "mail@" + i + ".com",
+                //    societa = societa[0],
+                //    solution = solution[r.Next(solution.Length)],
+                //    indirizzo = "Via Vittor Pisani 25",
+                //    cap = "245" + i,
+                //    dipartimento = "K!WER-" + i,
+                //    stanza = "707",
+                //    fax = "06677292",
+                //    mobile = "4564456" + i,
+                //    interno = "56" + i,
+                //    mobilepublico = "097953268" + i,
+                //    segretaria = "2345",
+                //    atributo1 = "23524563676",
+                //    telefono = "3456346"
+                //});
+      
 
-                Custommers.Add(new Custommer()
-                {
-                    nome = nome[r.Next(nome.Length)],
-                    cognome = cognome[r.Next(cognome.Length)]+i,
-                    citta = citta[r.Next(citta.Length)],
-                    posizione = pozisione[r.Next(pozisione.Length)],
-                    mail = "mail@" + i + ".com",
-                    societa = societa[0],
-                    solution = solution[r.Next(solution.Length)],
-                    indirizzo="Via Vittor Pisani 25",
-                    cap="245"+i,
-                    dipartimento="K!WER-"+i,
-                    stanza="707",
-                    fax="06677292",
-                    mobile="4564456"+i,
-                    interno="56"+i,
-                    mobilepublico="097953268"+i,
-                    segretaria="2345",
-                    atributo1="23524563676",
-                    telefono="3456346"
-                });
 
+
+
+
+
+                //Custommers.Add(new Custommer()
+                //{
+                //    nome = nome[r.Next(nome.Length)],
+                //    cognome = cognome[r.Next(cognome.Length)]+i,
+                //    citta = citta[r.Next(citta.Length)],
+                //    posizione = pozisione[r.Next(pozisione.Length)],
+                //    mail = "mail@" + i + ".com",
+                //    societa = societa[0],
+                //    solution = solution[r.Next(solution.Length)],
+                //    indirizzo="Via Vittor Pisani 25",
+                //    cap="245"+i,
+                //    dipartimento="K!WER-"+i,
+                //    stanza="707",
+                //    fax="06677292",
+                //    mobile="4564456"+i,
+                //    interno="56"+i,
+                //    mobilepublico="097953268"+i,
+                //    segretaria="2345",
+                //    atributo1="23524563676",
+                //    telefono="3456346"
+                //});
+                //custCont = new CustomersContext();
 
             }
-
+            DataTable value=new CustomersContext().SelectQuery("SELECT * FROM Customer");
         }
     }
    
