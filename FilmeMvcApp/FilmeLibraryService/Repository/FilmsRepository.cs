@@ -43,16 +43,32 @@ namespace FilmeLibraryService.Repository
 
         };
         private string[] categories = new string[] { "Trayler", "Fantastic", "Musicle", "Horror", "History", "Moldavian" };
-
         private string[] countries = new string[] { "MD", "UE", "USA", "RUSSIA", "CHINA" };
 
+
+        public string[] nome = new string[] { "Marialaura", "Roberto", "Gianluisa", "Carlos" };
+        public string[] cognome = new string[] { "Alberio", "Alberti", "Vacci" };
+        public string[] pozisione = new string[] { "manager 1", "manager 2", "manager 3" };
+        public string[] societa = new string[] { "KPMG S.p.A." };
+        public string[] solution = new string[] { "ATTESTATION AND ADVISORY", "ATTESTATION", "ADVISORY" };
+        public string[] citta = new string[] { "Milano", "Roma", "PAdova" };
+
+
         public List<Film> Filme = new List<Film>();
+        public List<Custommer> Custommers = new List<Custommer>();
+
 
         public FilmsRepository()
         {
             IiniTializeRepo();
         }
 
+
+
+        public List<Custommer> GetByCustomerProp()
+        {
+            return Custommers;
+        }
 
         public Film GetByID(int Id)
         {
@@ -129,18 +145,44 @@ namespace FilmeLibraryService.Repository
         private void IiniTializeRepo()
         {
             Random r = new Random();
-            for (int i = 0; i < 100;i++)
+            for (int i = 0; i < 100; i++)
             {
                 Filme.Add(new Film()
                 {
                     Id = i,
-                    Name="Name Film"+i,
-                    Description=descriptions[r.Next(descriptions.Length)],
-                    Category=categories[r.Next(categories.Length)],
-                    Image=images[r.Next(images.Length)],
-                    Country=countries[r.Next(countries.Length)]
+                    Name = "Name Film" + i,
+                    Description = descriptions[r.Next(descriptions.Length)],
+                    Category = categories[r.Next(categories.Length)],
+                    Image = images[r.Next(images.Length)],
+                    Country = countries[r.Next(countries.Length)]
 
                 });
+
+                             
+
+                Custommers.Add(new Custommer()
+                {
+                    nome = nome[r.Next(nome.Length)],
+                    cognome = cognome[r.Next(cognome.Length)]+i,
+                    citta = citta[r.Next(citta.Length)],
+                    posizione = pozisione[r.Next(pozisione.Length)],
+                    mail = "mail@" + i + ".com",
+                    societa = societa[0],
+                    solution = solution[r.Next(solution.Length)],
+                    indirizzo="Via Vittor Pisani 25",
+                    cap="245"+i,
+                    dipartimento="K!WER-"+i,
+                    stanza="707",
+                    fax="06677292",
+                    mobile="4564456"+i,
+                    interno="56"+i,
+                    mobilepublico="097953268"+i,
+                    segretaria="2345",
+                    atributo1="23524563676",
+                    telefono="3456346"
+                });
+
+
             }
 
         }

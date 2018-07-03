@@ -10,9 +10,16 @@ namespace FilmeLibraryService.Services
         private static FilmsRepository filmsRepository = new FilmsRepository();
 
 
+        public static List<Custommer> GetByCustomerProp()
+        {
+            return filmsRepository.GetByCustomerProp();
+        }
+
+
+
         public static Film GetById(int Id)
         {
-            return filmsRepository.GetByID(Id); 
+            return filmsRepository.GetByID(Id);
         }
 
         public static List<Film> GetAll()
@@ -30,7 +37,7 @@ namespace FilmeLibraryService.Services
             return filmsRepository.GetByName(Name);
         }
 
-        public  static List<string> GetAllCategory()
+        public static List<string> GetAllCategory()
         {
             return filmsRepository.GetAllCategory();
         }
@@ -54,7 +61,7 @@ namespace FilmeLibraryService.Services
 
         public static void UpdateFilm(Film film)
         {
-           filmsRepository.UpdateFilm(film);
+            filmsRepository.UpdateFilm(film);
         }
 
     }

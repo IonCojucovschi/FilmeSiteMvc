@@ -84,7 +84,6 @@
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
     <Folder Include="Content\images\">
-      <DependentUpon>images</DependentUpon>
     </Folder>
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +95,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\FilmController.cs" />
     <Compile Include="Models\FilmModel.cs" />
+    <Compile Include="Controllers\yellowPageController.cs" />
+    <Compile Include="Models\RicercaModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

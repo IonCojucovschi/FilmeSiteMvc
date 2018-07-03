@@ -12,17 +12,18 @@ namespace FilmeSite.Controllers
 {
     public class HomeController : Controller
     {
+
         public ActionResult Index(int? page)
         {
-            var model = FilmeServices.GetAll().ToList<Film>().ToPagedList(page ?? 1,6);
+            var model = FilmeServices.GetAll().ToList<Film>().ToPagedList(page ?? 1, 6);
 
             return View(model);
         }
 
-        public ActionResult CategoryContent(string categ,int? page)
+        public ActionResult CategoryContent(string categ, int? page)
         {
             ViewBag.Categ = categ;
-            
+
             var model = FilmeServices.GetByCategory(categ).ToList().ToPagedList(page ?? 1, 6);
 
 
@@ -47,5 +48,13 @@ namespace FilmeSite.Controllers
         {
             return PartialView("_FilmView", model);
         }
+
+
+
+
+
     }
+
+
+
 }

@@ -1,19 +1,11 @@
 ﻿<Properties StartupConfiguration="{DBFE1A45-1993-4C16-92D5-56D0F484D58F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FilmeSite/Views/Film/AddFilm.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilmeSite/Models/RicercaModel.cs">
     <Files>
-      <File FileName="FilmeSite/Controllers/HomeController.cs" Line="48" Column="52" />
-      <File FileName="FilmeLibraryService/Services/FilmeServices.cs" Line="2" Column="34" />
-      <File FileName="FilmeSite/Views/Shared/_FilmView.cshtml" Line="5" Column="67" />
-      <File FileName="FilmeSite/Content/site.css" Line="77" Column="1" />
-      <File FileName="FilmeSite/Scripts/site.js" Line="6" Column="18" />
-      <File FileName="FilmeSite/Views/Shared/_Layout.cshtml" Line="20" Column="47" />
-      <File FileName="FilmeSite/Views/Home/CategoryContent.cshtml" Line="17" Column="5" />
-      <File FileName="FilmeSite/Views/Home/FilmDetail.cshtml" Line="14" Column="28" />
-      <File FileName="FilmeSite/Views/Home/Index.cshtml" Line="8" Column="1" />
-      <File FileName="FilmeLibraryService/Repository/FilmsRepository.cs" Line="32" Column="1" />
-      <File FileName="FilmeLibraryService/Models/Film.cs" Line="8" Column="34" />
-      <File FileName="FilmeSite/Controllers/FilmController.cs" Line="18" Column="21" />
-      <File FileName="FilmeSite/Views/Film/AddFilm.cshtml" Line="1" Column="1" />
+      <File FileName="FilmeLibraryService/Services/FilmeServices.cs" Line="15" Column="45" />
+      <File FileName="FilmeSite/Controllers/HomeController.cs" Line="15" Column="1" />
+      <File FileName="FilmeSite/Controllers/yellowPageController.cs" Line="35" Column="30" />
+      <File FileName="FilmeLibraryService/Repository/FilmsRepository.cs" Line="73" Column="9" />
+      <File FileName="FilmeSite/Models/RicercaModel.cs" Line="23" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
