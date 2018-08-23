@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
+//using System.Data;
 using System.Linq;
 using FilmeLibraryService.Models;
 
@@ -8,7 +8,7 @@ namespace FilmeLibraryService.Repository
 {
     public class FilmsRepository
     {
-        public string[] descriptions = new string[] 
+        public string[] descriptions = new string[]
         { @"A film, also called a movie, motion picture, moving pícture, theatrical film, or photoplay, is a series of still images that, 
                 when shown on a screen, create the illusion of moving images. (See the glossary of motion picture terms.)
         This optical illusion causes the audience to perceive continuous motion between separate objects viewed in rapid succession. 
@@ -19,7 +19,7 @@ namespace FilmeLibraryService.Repository
                      onto a large screen. Contemporary films are now often fully digital through the entire process of production, distribution, 
         and exhibition, while films recorded in a photochemical form traditionally included an analogous optical soundtrack (a graphic recording 
         of the spoken words, music and other sounds that accompany the images which runs along a portion of the film exclusively reserved for it,
-         and is not projected).", 
+         and is not projected).",
                     @"Films are cultural artifacts created by specific cultures. They reflect those cultures, and, in turn, affect them. 
                     Film is considered to be an important art form, a source of popular entertainment, and a powerful medium for educating—or 
         indoctrinating—citizens. The visual basis of film gives it a universal power of communication. Some films have become popular worldwide 
@@ -57,7 +57,7 @@ namespace FilmeLibraryService.Repository
 
         public List<Film> Filme = new List<Film>();
         public List<Custommer> Custommers = new List<Custommer>();
-       // public CustomersContext custCont;
+        // public CustomersContext custCont;
 
         public FilmsRepository()
         {
@@ -179,7 +179,7 @@ namespace FilmeLibraryService.Repository
         {
             var categ = Filme.Select(prop => prop.Category).Distinct().ToList<string>();
             return categ;
-        } 
+        }
 
 
 
@@ -197,9 +197,9 @@ namespace FilmeLibraryService.Repository
 
         public void UpdateFilm(Film fil)
         {
-            foreach(var itm in Filme)
+            foreach (var itm in Filme)
             {
-                if(itm.Id==fil.Id)
+                if (itm.Id == fil.Id)
                 {
                     itm.Name = fil.Name;
                     itm.Image = fil.Image;
@@ -254,7 +254,7 @@ namespace FilmeLibraryService.Repository
                 //    atributo1 = "23524563676",
                 //    telefono = "3456346"
                 //});
-      
+
 
 
 
@@ -285,8 +285,8 @@ namespace FilmeLibraryService.Repository
                 //custCont = new CustomersContext();
 
             }
-            DataTable value=new CustomersContext().SelectQuery("SELECT * FROM Customer");
+            ///  DataTable value = new CustomersContext().SelectQuery("SELECT * FROM Customer");
         }
     }
-   
+
 }

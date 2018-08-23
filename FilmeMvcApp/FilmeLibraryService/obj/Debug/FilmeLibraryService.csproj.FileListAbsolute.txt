@@ -4,3 +4,11 @@
 /Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.csproj.CoreCompileInputs.cache
 /Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.dll
 /Users/bss/Documents/IN Proj/FilmeMvc/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.pdb
+/Users/bss/Documents/INProj/FilmeMVC/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.csprojAssemblyReference.cache
+/Users/bss/Documents/INProj/FilmeMVC/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.csproj.CoreCompileInputs.cache
+/Users/bss/Documents/INProj/FilmeMVC/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.dll
+/Users/bss/Documents/INProj/FilmeMVC/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.pdb
+/Users/bss/Documents/INProj/FilmeMVC/FilmeMvcApp/FilmeLibraryService/bin/Debug/FilmeLibraryService.dll
+/Users/bss/Documents/INProj/FilmeMVC/FilmeMvcApp/FilmeLibraryService/bin/Debug/FilmeLibraryService.pdb
+/Users/bss/Documents/INProj/FilmeMVC/FilmeMvcApp/FilmeLibraryService/bin/Debug/System.ComponentModel.DataAnnotations.dll
+/Users/bss/Documents/INProj/FilmeMVC/FilmeMvcApp/FilmeLibraryService/obj/Debug/FilmeLibraryService.csproj.CopyComplete
